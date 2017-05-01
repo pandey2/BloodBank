@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textSize="12dp"
+        android:textColor="#454545"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/textView2"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:onClick="donor"
+        android:layout_marginTop="12dp"
+        app:srcCompat="@drawable/reci"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:hint="Blood group"
+        android:background="#f3f3f3"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="36dp"
+        android:id="@+id/blood"
+        android:layout_below="@+id/gen" />
+    <Spinner android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:hint="Gender"
+        android:background="#f3f3f3"
+        android:paddingLeft="5dp"
+        android:id="@+id/gen"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="90dp" />
+
+    <Button
+        android:id="@+id/Search"
+        android:layout_width="190dp"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/blood"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="85dp"
+        android:layout_marginRight="85dp"
+        android:layout_marginTop="58dp"
+        android:background="#C62828"
+        android:onClick="submit"
+        android:text="submit"
+        android:textColor="#fff" />
+
+
+</RelativeLayout>
